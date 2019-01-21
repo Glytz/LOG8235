@@ -21,7 +21,7 @@ public:
 	virtual bool GetAroundObstacle(float deltaTime) override;
 	virtual float GetDistanceToSpline(USplineComponent const& spline) override;
 	virtual bool FollowSplineInDynamicObstacles(USplineComponent const& spline, float deltaTime) override;
-	virtual USplineComponent* GetClosestSplineWithoutObstacle(TArray<USplineComponent*> const& splines) const override;
+	virtual USplineComponent* GetClosestSplineWithoutObstacle(TArray<USplineComponent*> const& splines) override;
 	virtual FVector2D FindSplineClosestPosition(USplineComponent const& spline) const override;
 	virtual TArray<FOverlapResult> CollectTargetActorsInFrontOfCharacter(APawn const* pawn, PhysicsHelpers& physicHelper) const override;
 };

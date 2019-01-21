@@ -270,7 +270,7 @@ bool ASDTAIController::FollowSplineInDynamicObstacles(USplineComponent const& sp
 	return (spline.FindInputKeyClosestToWorldLocation(GetPawn()->GetActorLocation()) / (spline.GetNumberOfSplinePoints() - 1)) > 0.99f;
 }
 
-USplineComponent * ASDTAIController::GetClosestSplineWithoutObstacle(TArray<USplineComponent*> const & splines) const
+USplineComponent * ASDTAIController::GetClosestSplineWithoutObstacle(TArray<USplineComponent*> const & splines)
 {
 	for (USplineComponent* spline : splines)
 	{

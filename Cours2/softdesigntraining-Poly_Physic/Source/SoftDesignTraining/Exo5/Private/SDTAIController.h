@@ -74,7 +74,7 @@ protected:
 	virtual bool GetAroundObstacle(float deltaTime);
 	virtual float GetDistanceToSpline(USplineComponent const& spline);
 	virtual bool FollowSplineInDynamicObstacles(USplineComponent const& spline, float deltaTime);
-	virtual USplineComponent* GetClosestSplineWithoutObstacle(TArray<USplineComponent*> const& splines) const;
+	virtual USplineComponent* GetClosestSplineWithoutObstacle(TArray<USplineComponent*> const& splines);
 	virtual TArray<CollisionInfo> RecoverIncomingCollisions(FVector2D projectedVelocity) const;
 	virtual FVector2D FindSplineClosestPosition(USplineComponent const& spline) const;
 	virtual TArray<FOverlapResult> CollectTargetActorsInFrontOfCharacter(APawn const * pawn, PhysicsHelpers & physicHelper) const;
